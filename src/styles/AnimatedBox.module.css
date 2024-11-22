@@ -1,0 +1,11 @@
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: linear-gradient(45deg, #00ccff, #ff0066);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
