@@ -7,3 +7,33 @@ body {
 * {
   box-sizing: border-box;
 }
+/* 스크롤바 스타일 초기 설정 */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #111;
+  opacity: 0; /* 기본적으로 투명 */
+  transition: opacity 0.5s ease; /* 천천히 나타나고 사라지는 효과 */
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6B6EFF, #FF6B6B);
+  border-radius: 10px;
+  box-shadow: 0 0 5px #6B6EFF, 0 0 10px #FF6B6B;
+  border: 2px solid #111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #FF6B6B, #6B6EFF);
+  box-shadow: 0 0 10px #FF6B6B, 0 0 20px #6B6EFF;
+}
+
+/* 스크롤바 활성 상태 */
+body.scroll-active ::-webkit-scrollbar {
+  opacity: 1; /* 스크롤 중에 보이도록 설정 */
+}

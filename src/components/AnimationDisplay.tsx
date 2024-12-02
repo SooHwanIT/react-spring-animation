@@ -75,14 +75,19 @@ ${code || ''}
                     resetCode(newCode);
                 }}
                 fontSize={14}
-                width="100%"
-                height="200px"
+                width="100%" // 가로로 꽉 차게 설정
+                height="calc(100vh - 250px)" // 높이를 화면 기준으로 조정
                 setOptions={{
                     enableBasicAutocompletion: true,
                     enableLiveAutocompletion: true,
                     enableSnippets: true,
                 }}
+                style={{
+                    flexGrow: 1, // 남은 공간을 채우도록 설정
+                    marginTop: "20px",
+                }}
             />
+
         </DisplayContainer>
     );
 }
